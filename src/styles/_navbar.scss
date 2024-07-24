@@ -46,7 +46,7 @@
         opacity: 0;
         visibility: hidden;
 
-        @media only screen and (max-width: $bp-xlarge) {
+        @media only screen and (max-width: $bp-largest) {
             opacity: 1;
             visibility: visible;
         }
@@ -130,7 +130,7 @@
     align-items: center;
     list-style: none;
 
-    @media only screen and (max-width: $bp-xlarge) {
+    @media only screen and (max-width: $bp-largest) {
         opacity: 0;
         visibility: hidden;
     }
