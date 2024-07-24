@@ -1,11 +1,15 @@
 .hero-pic {
     margin-top: 1rem;
-    position: relative;
 
 .main-pic {
     background-size: cover;
     height: 100%;
     width: 100%;
     border-radius: 5rem;
+
+    @media only screen and (max-width: $bp-xmedium) {
+        margin-right: 10rem;
+        width: 90%;
+    }
 }
 }

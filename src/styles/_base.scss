@@ -13,6 +13,15 @@ $border: 1px solid rgba($color-primary-dark, .3);
 $font-display: 'Iranian Sans', sans-serif;
 $font-color: #5c5d5e;
 
+// REPONSIVE BREAKPOINTS
+$bp-largest: 82.5em; //1320px
+$bp-solarge: 75em; //1200px
+$bp-xlarge: 69.3em; //1110px
+$bp-large: 62em; //1000px
+$bp-xmedium: 53.1em; //850px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 *,
 *::before,
 *::after {

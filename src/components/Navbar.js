@@ -34,6 +34,13 @@ const Navbar = () => {
             <li className='inside__nav'><a href="#" className='inside__nav--link'>بیمه مسافرتی</a></li>
             </ul>
           </li>
+          <li className='nav__list hidden'><a href="#" className='nav__list--link'>سایر</a><span><GoChevronDown className='nav__list--logo'/></span>
+            <ul className='inside'>
+            <li className='inside__nav'><a href="#" className='inside__nav--link'>مرکز پشتیبانی آنلاین</a></li>
+            <li className='inside__nav'><a href="#" className='inside__nav--link'>سفرهای من </a></li>
+            <li className='inside__nav'><a href="#" className='inside__nav--link'>ورود یا ثبت نام</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <ul className='info'>

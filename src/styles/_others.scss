@@ -2,10 +2,16 @@
     width: 87%;
     margin:auto;
 
+    @media only screen and (max-width: $bp-xmedium) {
+        margin-right: 10rem;
+    }
+
     &__title {
        font-size: 1.8rem;
        font-weight: 600; 
     }
+
+    
 
 .container {
     margin-top: 1rem;
@@ -21,6 +27,10 @@
         width: 25%;
         padding: 5rem;
         position: relative;
+
+        @media only screen and (max-width: $bp-xmedium) {
+            gap: 1rem;
+        }
 
         &:not(:first-child)::after {
         content: "";
@@ -42,6 +52,9 @@
         &--text {
             width: 70%;
             font-size: 1.5rem;
+            @media only screen and (max-width: $bp-xmedium) {
+                font-size: 1rem;
+            }
         }
 .new {
     position: relative;
@@ -52,8 +65,16 @@
             color: $bg-color;
             font-size: 1.3rem;
             border-radius: 30%;
+            width: fit-content;
             top: 38%;
-            left: 60%;
+            right: 30%;
+
+            @media only screen and (max-width: $bp-xmedium) {
+                margin-right: 10rem;
+                top: 40%;
+                transform: translateX(8rem);
+                font-size: .6rem;
+            }
         }
     }
 }
@@ -67,6 +88,10 @@
         justify-content: center;
         align-items: center;
         border-radius: $border-ra;
+
+        @media only screen and (max-width: $bp-xmedium) {
+            width: 80%;
+        }
     }
 
     &__ad {
@@ -75,6 +100,15 @@
         &--pic {
             width: 49.5%;
             border-radius: $border-ra;
+
+            @media only screen and (max-width: $bp-xmedium) {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-width: $bp-xmedium) {
+            flex-direction: column;
+            align-items: center;
         }
     }
     
@@ -87,11 +121,19 @@
     border-radius: $border-ra;
     border: $border;
 
+    @media only screen and (max-width: $bp-xmedium) {
+        flex-direction: column;
+        height: 30%;
+    }
+
     &__detail {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
+        display: flex;
+        gap: 10rem;
         margin-right: 10rem;
+
+        @media only screen and (max-width: $bp-solarge) {
+            flex-direction: column;
+        }
 
         .qr-code {
             align-self: center;
@@ -136,6 +178,11 @@
             height: 100%;
             width: 35rem;
             margin-left: 12rem;
+
+            @media only screen and (max-width: $bp-xmedium) {
+                margin-right: 15rem;
+                margin-top: 2rem;
+            }
         }
     }
 }

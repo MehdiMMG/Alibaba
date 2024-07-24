@@ -18,13 +18,13 @@ const Search = () => {
   return (
     <section className="search-container">
       <div className="type">
-        <a href="#" className='type__link active'><BsAirplane className='type__icon'/> پرواز داخلی</a>
-        <a href="#" className='type__link'><BsAirplaneEngines className='type__icon'/>پرواز خارجی</a>
-        <a href="#" className='type__link'><PiTrain className='type__icon'/>قطار</a>
-        <a href="#" className='type__link'><IoBusOutline className='type__icon'/>اتوبوس</a>
-        <a href="#" className='type__link'><GiSchoolBag className='type__icon'/>تور</a>
-        <a href="#" className='type__link'><RiBuildingLine className='type__icon'/>هتل</a>
-        <a href="#" className='type__link'><FaTent className='type__icon'/>ویلا و اقامتگاه</a>
+        <a href="#" className='type__link active'><BsAirplane className='type__link--icon'/> پرواز داخلی</a>
+        <a href="#" className='type__link'><BsAirplaneEngines className='type__link--icon'/>پرواز خارجی</a>
+        <a href="#" className='type__link'><PiTrain className='type__link--icon'/>قطار</a>
+        <a href="#" className='type__link'><IoBusOutline className='type__link--icon'/>اتوبوس</a>
+        <a href="#" className='type__link'><GiSchoolBag className='type__link--icon'/>تور</a>
+        <a href="#" className='type__link'><RiBuildingLine className='type__link--icon'/>هتل</a>
+        <a href="#" className='type__link'><FaTent className='type__link--icon'/>ویلا و اقامتگاه</a>
       </div>
       <div className="login">
         <form className="login__form">

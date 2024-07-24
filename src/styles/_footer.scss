@@ -7,6 +7,11 @@
     margin-top: 3rem;
     border-bottom: $border;
 
+    @media only screen and (max-width: $bp-xmedium) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 .links {
     display: flex;
     flex-direction: column;
