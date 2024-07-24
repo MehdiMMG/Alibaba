@@ -1,0 +1,125 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    border-top: $border;
+    margin-top: 3rem;
+    border-bottom: $border;
+
+.links {
+    display: flex;
+    flex-direction: column;
+.right {
+    display: flex;
+    gap: 5rem;
+
+.link {
+
+    &__paragraph {
+        font-size: 1.8rem;
+    }
+    
+    &__nav {
+        
+        .big-font {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        &--list {   
+            list-style: none;
+            padding: .5rem;
+        }
+
+        &--add {
+            text-decoration: none;
+            color: $color-primary-dark;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+    }
+}
+}
+.blit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 1rem;
+
+.tours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &__list{
+        color: $font-color;
+        list-style: none;
+
+        &:not(:first-child){
+            list-style: inside;
+        }
+        
+        &--link {
+            text-decoration: none;
+            color: $font-color;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__btn {
+        border: none;
+        width: fit-content;
+        background-color: inherit;
+        color: $color-primary;
+        font-family: inherit;
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+}
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    
+
+    gap: 2rem;
+
+    &__title {
+        direction: ltr;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-primary;
+    }
+
+    &__phone {
+        direction: ltr;
+        font-size: 1.4rem;
+    }
+
+    &__address {
+        direction: ltr;
+        font-size: 1.25rem;
+    }
+
+    &__img {
+        margin-top: 3rem;
+        direction: ltr;
+        display: flex;
+        gap: 2.5rem;
+
+        &--pic {
+            width: 7rem;
+            height: 7rem;
+            border: $border;
+            border-radius: $border-ra;
+        }
+    }
+    
+
+}
+}

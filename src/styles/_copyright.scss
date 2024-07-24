@@ -1,0 +1,25 @@
+.copyright {
+    width: 85%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+
+.text {
+
+    &__detail {
+        font-size: 1.2rem;
+        color: $font-color;
+    }
+}
+
+.logos {
+    direction: ltr;
+    display: flex;
+    gap: 3rem;
+    &__icon{
+        font-size: 2.5rem;
+        color: $font-color;
+        
+    }
+}
+}

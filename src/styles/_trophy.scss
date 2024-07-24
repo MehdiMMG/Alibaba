@@ -1,0 +1,46 @@
+.trophy {
+    margin-top: 12rem;
+    
+    border-top: $border;
+    position: relative;
+
+.conti {
+    display: flex;
+    width: 87%;
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+    height: 20rem;
+    box-shadow: none;
+    border-bottom: none;
+
+.parts {
+    display: flex;
+    align-items: center;
+    align-self: center;
+
+    &__img {
+
+        &--pic {
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+
+    &__detail{ 
+        width: 60%;
+
+        &--title {
+            font-size: 1.5rem;
+            line-height: 4.5rem;
+        }
+
+        &--text {
+
+            color: $font-color;
+            font-size: 1.5rem;
+        }
+    }
+}
+}
+}

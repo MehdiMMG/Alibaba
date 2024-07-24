@@ -1,0 +1,142 @@
+.others {
+    width: 87%;
+    margin:auto;
+
+    &__title {
+       font-size: 1.8rem;
+       font-weight: 600; 
+    }
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba($color-primary-dark, .3);
+    border-radius: $border-ra;
+    height: 7.5rem;
+    &__img {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        padding: 5rem;
+        position: relative;
+
+        &:not(:first-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        height: 30%;
+        width: 1px;
+        background-color: rgba($color-primary-dark, 0.3);
+      }
+
+        &--pic {
+            width: 30%;
+            height: auto;
+            margin-right: 1rem;
+        }
+
+        &--text {
+            width: 70%;
+            font-size: 1.5rem;
+        }
+.new {
+    position: relative;
+}
+        &--top{
+            position: absolute;
+            background-color: $color-primary;
+            color: $bg-color;
+            font-size: 1.3rem;
+            border-radius: 30%;
+            top: 38%;
+            left: 60%;
+        }
+    }
+}
+
+    &__phone {
+        margin-top: 2rem;
+        height: 33.3%;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $border-ra;
+    }
+
+    &__ad {
+        display: flex;
+        gap: 1rem;
+        &--pic {
+            width: 49.5%;
+            border-radius: $border-ra;
+        }
+    }
+    
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    height: 40%;
+    border-radius: $border-ra;
+    border: $border;
+
+    &__detail {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-right: 10rem;
+
+        .qr-code {
+            align-self: center;
+        }
+
+        .qr-text {
+            align-self: center;
+
+            &__title {
+                font-size: 1.9rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            &__head {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+            &__link {
+                display: flex;
+                text-decoration: none;
+                font-size: 1.8rem;
+            }
+
+            &__icon {
+                align-self: center;
+                margin-right: 1rem;
+            }
+
+            &__text {
+                font-size: 1.2rem;
+                margin-top: 3rem;
+                color: #999;
+            }
+        }
+    }
+
+    &__img {
+
+        &--pic {
+            height: 100%;
+            width: 35rem;
+            margin-left: 12rem;
+        }
+    }
+}
+}

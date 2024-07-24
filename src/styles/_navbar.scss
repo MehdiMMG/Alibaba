@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    border-bottom: 1px solid rgba($color-primary-light, .3);
+    box-shadow: .3rem .1rem .3rem .1rem rgba($color-primary-light, .3);
+
+.main-nav {
+    display: flex;
+    gap: 15rem;
+
+.main-logo {
+    cursor: pointer;
+    color: $color-primary;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all .3s;
+
+    &:hover {
+        color: $color-primary-dark;
+        transform: translateX(-1rem);
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 2.5rem;
+    position: relative;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        transition: all .3s;
+
+        &:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            height: 50%;
+            width: 1px;
+            background-color: rgba($color-primary-dark, 0.3);
+        }
+
+        &--link {
+            text-decoration: none;
+            width: 4rem;
+            font-size: 1.6rem;
+            color: $color-primary-light;
+            
+        }
+
+        &--logo {
+            font-size: 2.3rem;
+            padding-top: .5rem;
+        }
+
+        &:hover {
+            background-color: $effect-color;
+            border-radius: 1rem;
+        }
+        &:hover > .inside {
+            opacity: 1;
+            visibility: visible;
+            z-index: 1000;
+            background-color: $bg-color;
+            font-size: 1.6rem;
+            border-radius: $border-ra;
+            width: 13rem;
+
+            
+
+        }
+        .inside {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 6rem;
+            transition: all .3s;
+            &__nav {
+                list-style: none;
+                padding: 1rem;
+                border-bottom: $border;
+
+                &--link {
+                    text-decoration: none;
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
+}
+.info {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all .3s;
+        padding: .6rem;
+
+        &:hover {
+            background-color: $effect-color;
+            border-radius: 1rem;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+    }
+}
+}

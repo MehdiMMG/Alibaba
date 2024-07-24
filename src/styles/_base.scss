@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+$color-primary: #5a0066;
+$color-primary-dark: #070e14;
+$color-primary-light: #1e2833;
+$bg-color: #fff;
+$effect-color : #f0e5e5;
+$font-color: #696969;
+$border-ra: .5rem;
+$border: 1px solid rgba($color-primary-dark, .3);
+
+// FONT VARIABLES
+@import url('https://fonts.cdnfonts.com/css/iranian-sans');
+$font-display: 'Iranian Sans', sans-serif;
+$font-color: #5c5d5e;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: $font-display;
+    background-color: $bg-color;
+}
